@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="ro-RO">
     <head>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!--This is the title-->
-        <div class="titlesearch">
-        <h2 id="searchtitle">Search Results</h2>
+        <div class="Wrapper">
+        <h1 class="PageTitle">Search Results</h1>
         </div>
         <!--This is the section that includes the filters-->
-        <section id="search-results-filters">
-            <form id="selectfilter">
-                <select id="parks" name="parks">
-                    <option value="">All parks</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
+        <section id="Filters" class="Filters">
+                <select id="parks" name="parks" class="ParkFilters">
+                    <option value="" class="ParkFilters_Option">All parks</option>
+                    <option value="" class="ParkFilters_Option">X</option>
+                    <option value="" class="ParkFilters_Option">X</option>
+                    <option value="" class="ParkFilters_Option">X</option>
+                    <option value="" class="ParkFilters_Option">X</option>
                 </select>
-            </form>
-            <form id="sortfilter">
-                <select id="sort" name="sort">
-                    <option value="">Order new to old</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
-                    <option value="">X</option>
+                <select id="sort" name="sort" class="SortFilters">
+                    <option value="" class="SortFilters_Option">Order new to old</option>
+                    <option value="" class="SortFilters_Option">X</option>
+                    <option value="" class="SortFilters_Option">X</option>
+                    <option value="" class="SortFilters_Option">X</option>
+                    <option value="" class="SortFilters_Option">X</option>
                 </select>
-            </form>
         </section>
-        <!--This is the section that includes the results-->
-        <section id="search-results-list">
-            <div class="search-result">
-                <img src="img/logo.png" alt="Search image" width="200px" height="200px">
-                <div class="search-container">
-                    <h4>Search Title</h4>
-                    <p>Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                    <button type="button" onclick="alert('Hello world!')">Learn more</button>
+        <!--This is the section that includes the search results-->
+        <section id="ResultsList" class="ResultsList">
+            <article class="ResultsList_Article">
+                <img class="ResultsList_ArticleImage" src="img/logo.png" alt="Search image" width="200px" height="200px">
+                <div class="ResultsList_ArticleContainer">
+                    <h2 class="ResultsList_ArticleTitle">Search Title</h2>
+                    <p class="ResultsList_ArticleDescription">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                    <button class="ResultsList_ArticleButton" type="button" onclick="alert('Hello world!')">Learn more</button>
                 </div>
-            </div>
-            <div class="search-result">
-                <img src="img/logo.png" alt="Search image" width="200px" height="200px">
-                <div class="search-container">
-                    <h4>Search Title</h4>
-                    <p>Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                    <button type="button" onclick="alert('Hello world!')">Learn more</button>
+            </article>
+            <article class="ResultsList_Article">
+                <img class="ResultsList_ArticleImage" src="img/logo.png" alt="Search image" width="200px" height="200px">
+                <div class="ResultsList_ArticleContainer">
+                    <h2 class="ResultsList_ArticleTitle">Search Title</h2>
+                    <p class="ResultsList_ArticleDescription">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
+                    <button class="ResultsList_ArticleButton" type="button" onclick="alert('Hello world!')">Learn more</button>
                 </div>
-            </div>           
+            </article>    
         </section>
         <!--This is the section that includes the pagination-->
-        <section id="pagination">
-            <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a href="#">1</a>
-                <a class="active" href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">&raquo;</a>
-              </div>
+        <section id="pagination" class="PaginationSection">
+            <ul class="Pagination">
+                <li class="PaginationElement">
+                    <a href="#">&laquo;</a>
+                </li>
+                <li class="PaginationElement">
+                    <a href="#">1</a>
+                </li>  
+                <li class="PaginationElement">
+                    <a href="#">2</a>
+                </li>      
+                <li class="PaginationElement">
+                    <a href="#">3</a>
+                </li>
+                <li class="PaginationElement">
+                    <a href="#">4</a>
+                </li>      
+                <li class="PaginationElement">
+                    <a href="#">5</a>
+                </li>   
+                <li class="PaginationElement">
+                    <a href="#">6</a>
+                </li>   
+                <li class="PaginationElement">
+                    <a href="#">&raquo;</a>
+                </li>       
+            </ul>
         </section>
     </body>
 </html>
