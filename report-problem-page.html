@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a problem</title>
+    <meta name="description" content="page description here">
+    <meta property="og:title" content="website name" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="page-url" />
+    <meta property="og:image" content="generic-iamge.jpg" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/report.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <h1 class="headline">Report a problem</h1>
+    <section class="report-problem">
+        <ul class="report-problem__list">
+            <li class="report-problem__item">
+                <div class="report-problem__counter">1</div>
+                <p class="report-problem__label">select part</p>
+            </li>
+            <li class="report-problem__item">
+                <div class="report-problem__counter">2</div>
+                <p class="report-problem__label">Select the type of
+                    problem</p>
+            </li>
+            <li class="report-problem__item">
+                <div class="report-problem__counter">3</div>
+                <p class="report-problem__label">Compose complain</p>
+            </li>
+            <li class="report-problem__item">
+                <div class="report-problem__counter">4</div>
+                <p class="report-problem__label">Attach evidence ( videos, photos, documents etc.)</p>
+            </li>
+            <li class="report-problem__item">
+                <div class="report-problem__counter">5</div>
+                <p class="report-problem__label">Send it to the authorities</p>
+            </li>
+        </ul>
+    </section>
+    <section class="report-problem-wrapper">
+        <form action="/some-url" method="post" id="report-problem-form" class="report-form">
+            <div class="report-form__step">
+                <div class="report-form__counter">1</div>
+                <select name="report-problem-park-name" id="" class="report-form__select">
+                    <option value="select_park" class="report-form__option" disabled selected>Select a park from the dropdown</option>
+                    <option value="park-name-1">park-name-1</option>
+                    <option value="park-name-2">park-name-2</option>
+                </select>
+            </div>
+            <div class="report-form__step">
+                <div class="report-form__counter">2</div>
+                <select name="report-problem-type" id="" class="report-form__select">
+                    <option value="select_problem" class="report-form__option" disabled selected>Select the type of the problem</option>
+                    <option value="problem-1">problem-1</option>
+                    <option value="problem-2">problem-2</option>
+                </select>
+            </div>
+            <div class="report-form__step">
+                <div class="report-form__counter">3</div>
+                <input type="text" name="report-problem-subject" id="report-problem-subject" class="report-form__input">
+            </div>
+            <div class="report-form__step">
+                <textarea name="report-form-text" id="report-form-text" class="report-form-textarea" rows="10" cols="50">
+                    Some text here
+                </textarea>
+            </div>
+            <div class="report-form__step">
+                <div class="report-form__counter">4</div>
+                <input type="file" name="report-problem-attachement" id="report-problem-attachement" class="report-form__input">
+                <i data-feather="file"></i>
+            </div>
+            <div class="report-form__step">
+                <div class="report-form__icon"><i data-feather="info"></i></div>
+                <p class="report-form__disclaimer">The button below will open your favorite email application or a browser tab with text and pre-filled addresses. Read the text carefully, edit it accordingly and add the identifying data before sending it.</p>
+            </div>
+            <div class="report-form__step">
+                <div class="report-form__counter">5</div>
+                <input type="submit" value="report the problem" name="report-problem-submit" id="report-problem-submit" class="report-form__submit-btn">
+            </div>
+            <div class="report-form__step">
+                <div class="report-form__icon"><i data-feather="info"></i></div>
+                <p class="report-form__disclaimer">The complain will be sent to the following email adresses of the authorities :</p>
+            </div>
+        </form>
+    </section>
+    <footer></footer>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
