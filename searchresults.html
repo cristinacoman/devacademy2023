@@ -5,71 +5,69 @@
     </head>
     <body>
         <!--This is the title-->
-        <div class="Wrapper">
-        <h1 class="PageTitle">Search Results</h1>
-        </div>
+        <h1 class="page-title">Search Results</h1>
         <!--This is the section that includes the filters-->
-        <section id="Filters" class="Filters">
-                <select id="parks" name="parks" class="ParkFilters">
-                    <option value="" class="ParkFilters_Option">All parks</option>
-                    <option value="" class="ParkFilters_Option">X</option>
-                    <option value="" class="ParkFilters_Option">X</option>
-                    <option value="" class="ParkFilters_Option">X</option>
-                    <option value="" class="ParkFilters_Option">X</option>
+        <section id="filters" class="filters">
+                <select id="filter-parks" name="filter-parks" class="filter">
+                    <option value="" class="filter-option">All parks</option>
+                    <option value="" class="filter-option">X</option>
+                    <option value="" class="filter-option">X</option>
+                    <option value="" class="filter-option">X</option>
+                    <option value="" class="filter-option">X</option>
                 </select>
-                <select id="sort" name="sort" class="SortFilters">
-                    <option value="" class="SortFilters_Option">Order new to old</option>
-                    <option value="" class="SortFilters_Option">X</option>
-                    <option value="" class="SortFilters_Option">X</option>
-                    <option value="" class="SortFilters_Option">X</option>
-                    <option value="" class="SortFilters_Option">X</option>
+                <select id="filter-sort" name="filter-sort" class="filter">
+                    <option value="" class="filter-option">Order new to old</option>
+                    <option value="" class="filter-option">X</option>
+                    <option value="" class="filter-option">X</option>
+                    <option value="" class="filter-option">X</option>
+                    <option value="" class="filter-option">X</option>
                 </select>
         </section>
         <!--This is the section that includes the search results-->
-        <section id="ResultsList" class="ResultsList">
-            <article class="ResultsList_Article">
-                <img class="ResultsList_ArticleImage" src="img/logo.png" alt="Search image" width="200px" height="200px">
-                <div class="ResultsList_ArticleContainer">
-                    <h2 class="ResultsList_ArticleTitle">Search Title</h2>
-                    <p class="ResultsList_ArticleDescription">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                    <button class="ResultsList_ArticleButton" type="button" onclick="alert('Hello world!')">Learn more</button>
+        <section id="results-list" class="results-list">
+            <article class="results-list-article">
+                <img class="results-list-article-image" src="img/logo.png" alt="Search image" width="200px" height="200px">
+                <div class="results-list-article-container">
+                    <h2 class="results-list-article-title">Search Title</h2>
+                    <p class="results-list-article-description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem Ipsum Generator.</p>
+                    <button class="results-list-article-button" type="button" onclick="alert('Hello world!')">Learn more<span class="arrow">></span></button>
                 </div>
             </article>
-            <article class="ResultsList_Article">
-                <img class="ResultsList_ArticleImage" src="img/logo.png" alt="Search image" width="200px" height="200px">
-                <div class="ResultsList_ArticleContainer">
-                    <h2 class="ResultsList_ArticleTitle">Search Title</h2>
-                    <p class="ResultsList_ArticleDescription">Lorem ipsum Lorem ipsum Lorem ipsum...</p>
-                    <button class="ResultsList_ArticleButton" type="button" onclick="alert('Hello world!')">Learn more</button>
+            <article class="results-list-article">
+                <img class="results-list-article-image" src="img/logo.png" alt="Search image" width="200px" height="200px">
+                <div class="results-list-article-container">
+                    <h2 class="results-list-article-title">Search Title</h2>
+                    <p class="results-list-article-description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem Ipsum Generator.</p>
+                    <button class="results-list-article-button" type="button" onclick="alert('Hello world!')">Learn more<span class="arrow"></span></button>
                 </div>
             </article>    
         </section>
         <!--This is the section that includes the pagination-->
-        <section id="pagination" class="PaginationSection">
-            <ul class="Pagination">
-                <li class="PaginationElement">
-                    <a href="#">&laquo;</a>
+        <section id="pagination" class="pagination">
+            <ul class="pagination-list">
+                <li class="pagination-item">
+                    <a href="#">&laquo;Previous</a>
                 </li>
-                <li class="PaginationElement">
+                <li class="pagination-item">
                     <a href="#">1</a>
                 </li>  
-                <li class="PaginationElement">
+                <li class="pagination-item">
                     <a href="#">2</a>
                 </li>      
-                <li class="PaginationElement">
+                <li class="pagination-item">
                     <a href="#">3</a>
                 </li>
-                <li class="PaginationElement">
+                <li class="pagination-item">
                     <a href="#">4</a>
                 </li>      
-                <li class="PaginationElement">
+                <li class="pagination-item">
                     <a href="#">5</a>
                 </li>   
-                <li class="PaginationElement">
+                <li class="pagination-item">
                     <a href="#">6</a>
                 </li>   
-                <li class="PaginationElement">
-                    <a href="#">&raquo;</a>
+                <li class="pagination-item">
+                    <a href="#">Next&raquo;</a>
                 </li>       
             </ul>
         </section>
