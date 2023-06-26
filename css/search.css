@@ -1,1 +1,296 @@
 
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e3e0e0 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+  
+@media (max-width:767px) {
+
+    .page-title {
+        padding: 20px;
+        text-align: center;
+        font: normal normal normal 26px/34px Roboto;
+        letter-spacing: 0px;
+        color: #3A6B72;
+        opacity: 1;
+    }
+
+    .results-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5px 10px 10px 10px;
+        gap: 10px;
+    }
+
+    .results-article {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 10px 25px #0000000A;
+        opacity: 1;
+        height: auto;
+        flex: 40%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .results-article-image{
+        width: 90%;
+        margin: 10px auto;
+        height: 150px;
+    }
+
+    .results-article-container {
+        width: 90%;
+        position: relative;
+    }
+
+    .results-article-title {
+        text-align: justify;
+        font: normal normal bold 20px/22px Roboto;
+        letter-spacing: 0px;
+        color: #3A6B72;
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    .results-article-description {
+        text-align: justify;
+        font: normal normal normal 12px/16px Roboto Condensed;
+        letter-spacing: 0px;
+        color: #3A6B72;
+        padding-left: 10px;
+    }   
+
+    .results-article-button {
+        text-align: left;
+        font: normal normal normal 12px/16px Roboto;    
+        letter-spacing: 0px;
+        color: #7FAC92;
+        opacity: 1;
+        padding-left: 10px;
+        text-decoration: none;
+        position: absolute;
+        margin-bottom: 10px;
+    }
+
+    .results-article-view-icon {
+        padding-left: 5px;
+        color: #7FAC92;
+        opacity: 1;
+        position: absolute;
+    }
+
+    .results-article-social-share {
+        width: 15px;
+        height: 15px;
+    }
+
+    a:active{
+        text-align: left;
+        font: normal normal normal 16px/21px Roboto;
+        letter-spacing: 0px;
+        color: #FBB265;
+        opacity: 1;
+    }
+
+    .pagination-list {
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    li {
+        display: inline;
+    }
+
+    li:first-child {
+        position: absolute;
+        left: 10px;
+    }
+
+    li:last-child {
+        position: absolute;
+        right: 10px;
+    }
+
+    .pagination-forward-icon {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+    .pagination-back-icon {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}   
+
+  @media (min-width:768px) {
+  
+    .page-title {
+        color: #1E7786;
+        padding: 30px;
+        font-size: 38px;
+        text-align: center;
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+
+    .results-list {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 10px 25px #0000000A;
+        border-radius: 10px 10px 0px 0px;
+        opacity: 1;
+        max-width: 1200px;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .results-article-container {
+        padding-left: 150px;
+    }
+
+    .results-article-image{
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        top: 10px;
+        left: 5px;
+    }
+
+    .results-article {
+        padding: 90px;
+        border-bottom: 1px solid #1E7786;
+        position: relative;
+    }
+
+    .results-article-title {
+        text-align: left;
+        font: normal normal bold 18px/24px Roboto Condensed;
+        letter-spacing: 0px;
+        color: #0E3D45;
+        opacity: 1;
+        padding-left: 20px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .results-article-description {
+        text-align: left;
+        letter-spacing: 0px;
+        color: #0E3D45;
+        opacity: 1;
+        padding-left: 20px;
+        padding-top: 15px;
+        position: absolute;
+        top: 25px;
+        width: 70%;
+    }
+
+    .results-article-button {
+        text-align: left;
+        font: normal normal normal 16px/21px Roboto;
+        letter-spacing: 0px;
+        color: #7FAC92;
+        opacity: 1;
+        padding-left: 20px;
+        text-decoration: none;
+        margin-bottom: 5px;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .results-article-view-icon {
+        padding-left: 68px;
+        color: #7FAC92;
+        opacity: 1;
+    }
+
+    .results-article-social-share {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        right: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #7FAC92;
+    }
+
+    a:hover{
+        text-align: left;
+        font: normal normal normal 16px/21px Roboto;
+        letter-spacing: 0px;
+        color: #FBB265;
+        opacity: 1;
+    }
+
+    a:active{
+        text-align: left;
+        font: normal normal normal 16px/21px Roboto;
+        letter-spacing: 0px;
+        color: #FBB265;
+        opacity: 1;
+    }
+
+    .pagination {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 10px 25px #0000000A;
+        border-radius: 0px 0px 10px 10px;
+        opacity: 1;
+        max-width: 1200px;
+        height: 80px;
+        width: 100%;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .pagination-list {
+        text-align: center;
+        position: relative;
+    }
+
+    li {
+        display: inline;
+    }
+
+    li:first-child {
+        position: absolute;
+        left: 40px;
+    }
+
+    li:last-child {
+        position: absolute;
+        right: 40px;
+    }
+
+    .pagination-forward-icon {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .pagination-back-icon {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+  }
