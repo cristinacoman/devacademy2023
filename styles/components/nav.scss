@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-white);
+    padding-inline: 15px;
+    height: 60px;
+}
+
+// Button reset, should be moved
+button {
+    background: none;
+    border: none;
+}

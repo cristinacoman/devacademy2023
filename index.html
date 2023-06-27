@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <meta name="description" content="Some description goes here">
     <title>Delta Vacaresti</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
-            <button class="nav__button">nav-icon</button>
-            <img class="nav__logo" src="" />
+            <button class="nav__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16">
+                <g id="Group_3106" data-name="Group 3106" transform="translate(-14 -13)">
+                  <rect id="Rectangle_2022" data-name="Rectangle 2022" width="22" height="2" transform="translate(14 13)" fill="#7fac92"/>
+                  <rect id="Rectangle_2023" data-name="Rectangle 2023" width="22" height="2" transform="translate(14 20)" fill="#7fac92"/>
+                  <rect id="Rectangle_2024" data-name="Rectangle 2024" width="22" height="2" transform="translate(14 27)" fill="#7fac92"/>
+                </g>
+              </svg>
+            </button>
+            <img class="nav__logo" src="./assets/logo-acf.png" alt="logo-acf" />
             <div class="nav__secondary">
-                <a class="nav__search">search</a>
-                <a class="nav__lang">lang</a>
+                <a class="nav__search"></a>
+                <a class="nav__lang"></a>
             </div>
         </nav>
         <!-- this will be a carousel, have to refactor -->
@@ -65,8 +76,19 @@
                 <h2 class="upcoming__headline">upcoming events</h2>
             </div>
             <!-- This will be a slide -->
-            <div class="upcoming-events__event">
-                <img class="upcoming-events__image" src="" />
+            <div class="upcoming-events__slider">
+                <div class="upcoming-events__slide">
+                    <img class="upcoming-events__image" src="" />
+                    <div class="upcoming-events__content">
+                        <h3 class="upcoming-events__slide-title">
+                            Nature Fest: Celebrating and Preserving the Wonders of Our Planet
+                        </h3>
+                        <p class="upcoming-events__slide-text"></p>
+                    </div>
+                    <div class="upcoming-events__button">
+                        <button class="button">see events</button>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
