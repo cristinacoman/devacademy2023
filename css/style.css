@@ -1,0 +1,47 @@
+body {
+  --color-white: #fff;
+  --light-gray: #F9F9F9;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.hero__headline {
+  font-size: 46px;
+  line-height: 60px;
+  color: var(--light-gray);
+  font-weight: 700;
+  text-align: center;
+}
+.hero__subheadline {
+  font-size: 28px;
+  line-height: 30px;
+  color: var(--light-gray);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.header {
+  min-height: 80vh;
+  width: 100%;
+  background-image: url("../../assets/header-bg.png");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: var(--color-white);
+  padding-inline: 15px;
+  height: 60px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

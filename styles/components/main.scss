@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.hero {
+    &__headline {
+        font-size: 46px;
+        line-height: 60px;
+        color: var(--light-gray);
+        font-weight: 700;
+        text-align: center;
+    }
+    &__subheadline {
+        font-size: 28px;
+        line-height: 30px;
+        color: var(--light-gray);
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+.header {
+    min-height: 80vh;
+    width: 100%;
+    background-image: url("../../assets/header-bg.png");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
