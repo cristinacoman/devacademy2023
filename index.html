@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="ro-RO">
-    <head>
-    </head>
-    <body>
-        <header>
-            <h1 title="Delta Vacaresti Logo">
-                <a href="#">
-                <img src="img/logo.png" alt="o imagine cu un arici" width=100" height="100"/>
-                </a>
-            </h1>
-            <form>
-                <img src="https://img.icons8.com/search" width="20" height="20">
-                <input type="text" id="search-input" placeholder="Search" maxlength="30" method="POST" >
-                <input type="submit" value="Submit">
-            </form>
-            <select>
-                <option><img src="https://icons8.com/icon/3685/globe" width="20" height="20">EN</option>
-                <option><img src="https://icons8.com/icon/3685/globe" width="20" height="20">RO</option>
-            </select>
-            <nav>
-                <a href="#">Descopera Parcurile</a>
-                <a href="#">Info Municipalitate</a>
-                <a href="#">Alatura-te relelei</a>
-                <a href="#">Articole de presa</a>
-            </nav>
-
-        </header>
-        <section id="hero">
-            <div>Carousel ftw</div>
-            <div>Map</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Some description goes here">
+    <title>Delta Vacaresti</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <button class="nav__button">nav-icon</button>
+            <img class="nav__logo" src="" />
+            <div class="nav__secondary">
+                <a class="nav__search">search</a>
+                <a class="nav__lang">lang</a>
+            </div>
+        </nav>
+        <!-- this will be a carousel, have to refactor -->
+        <section class="hero">
+            <img class="hero__image" src="" loading="lazy"/>
+            <h1 class="hero__headline"><span class="hero__headline hero__headline--highlight">Ariile</span> naturale protejate urbane:</h1>
+            <h3 class="hero__subheadline">Natura la usa ta!</h3>
         </section>
-        <section id="sponsors">Sponsors section</section>
-        <section id="latestNews">Latest News</section>
-        <section id="petitions">Petitions</section>
-        <section id="events">Events</section>
-        <section id="pressAppearances">Press Appearances</section>
-        <section id="social">Social Section</section>
-        <section id="problemReport">Report a Problem</section>
-        <footer id="footer">Footer</footer>
-    </body>
-
+        <!-- end of carousel -->
+    </header>
+    <div class="main">
+        <section class="sponsors">
+            <div class="sponsors__wrapper">
+                <img class="sponsors__logo" src="" loading="lazy" />
+                <img class="sponsors__logo" src="" loading="lazy"/>
+                <img class="sponsors__logo" src="" loading="lazy"/>
+                <img class="sponsors__logo" src="" loading="lazy"/>
+            </div>
+            <p class="sponsors__disclaimer">
+                The project is implemented by Văcărești Natural Park Association, in partnership with SOS Association, EKE Satu Mare Association, Mountain Ecology Centre, Funky Citizens, Excelsior Association, Ecotop Foundation, Walden Association, Bioteam Association, Romanian Ornithology Society Iași and Ruralis Association and benefits from a 224,136 euros grant from Active Citizens Fund Romania, programme funded by Iceland, Liechtenstein and Norway through the EEA Grants Grants 2014 -2021. The content of this website does not necessarily reflect the official position of the EEA and Norway Grants 2014-2021; for more information visit www.eeagrants.org. More details about Active Citizens Fund Romania are available at www.activecitizensfund.ro.
+            </p>
+        </section>
+        <section class="news">
+            <div class="news__header">
+                <h2 class="news__headline">latest news</h2>
+                <a class="news__header-link">view all</a>
+            </div>
+            <div class="news__content">
+                <article class="news-card">
+                    <img class="news-card__image" src="" alt="" loading="lazy">
+                    <img class="news-card__share-icon" />
+                    <p class="news-card__title">News Title</p>
+                    <p class="news-card__description">News Title Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem Ipsum Generator.</p>
+                    <a class="news-card__link">Learn more</a>
+                </article>
+                <article class="news-card">
+                    <img class="news-card__image" src="" alt="" loading="lazy">
+                    <img class="news-card__share-icon" />
+                    <p class="news-card__title">news title</p>
+                    <p class="news-card__description">News Title Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem Ipsum Generator.</p>
+                    <a class="news-card__link">Learn more</a>
+                </article>
+            </div>
+        </section>
+        <section class="upcoming-events">
+            <div class="upcoming__header">
+                <h2 class="upcoming__headline">upcoming events</h2>
+            </div>
+            <!-- This will be a slide -->
+            <div class="upcoming-events__event">
+                <img class="upcoming-events__image" src="" />
+            </div>
+        </section>
+    </div>
+    <footer class="footer"></footer>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
