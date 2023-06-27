@@ -1,0 +1,22 @@
+{
+  "name": "delta-vacaresti",
+  "version": "1.0.0",
+  "description": "delta vacaresti website",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass -w styles/index.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catalinmoraru82/delta-vacaresti.git"
+  },
+  "author": "Catalin Moraru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catalinmoraru82/delta-vacaresti/issues"
+  },
+  "homepage": "https://github.com/catalinmoraru82/delta-vacaresti#readme",
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
+}
