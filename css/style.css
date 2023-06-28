@@ -1,6 +1,27 @@
 body {
-  --color-white: #fff;
-  --light-gray: #F9F9F9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-orange: #FBB265;
+  --color-teal-1: #0E3D45;
+  --color-teal-2: #3A6B72;
+  --color-teal-3: #206976;
+  --color-teal-4: #1E7786;
+  --color-teal-5: #2DAED5;
+  --color-brown-1: #5D5D5D;
+  --color-brown-2: #613D44;
+  --color-brown-3: #855E4F;
+  --color-green-1: #50723A;
+  --color-green-2: #0EAC51;
+  --color-green-3: #1EBC61;
+  --color-green-4: #94D098;
+  --color-green-5: #7FAC92;
+  --color-green-6: #9CBAA9;
+  --color-light-1: #BCC9C2;
+  --color-light-2: #BDE5BD;
+  --color-light-3: #C6DBCF;
+  --color-light-4: #DCEAE3;
+  --color-light-5: #FBFBFB;
+  --color-light-6: #F9F9F9;
 }
 
 body {
@@ -10,14 +31,19 @@ body {
 .hero__headline {
   font-size: 46px;
   line-height: 60px;
-  color: var(--light-gray);
+  color: var(--color-light-6);
   font-weight: 700;
   text-align: center;
+}
+.hero__headline--highlight {
+  background: linear-gradient(148deg, rgb(58, 107, 112) 0%, rgb(80, 114, 58) 100%);
+  padding: 4px 10px;
+  border-radius: 10px;
 }
 .hero__subheadline {
   font-size: 28px;
   line-height: 30px;
-  color: var(--light-gray);
+  color: var(--color-light-6);
   text-align: center;
   margin-top: 10px;
 }
@@ -29,6 +55,10 @@ body {
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.sponsors {
+  padding: 6px 16px;
 }
 
 .nav {

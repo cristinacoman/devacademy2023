@@ -6,14 +6,19 @@ body {
     &__headline {
         font-size: 46px;
         line-height: 60px;
-        color: var(--light-gray);
+        color: var( --color-light-6);
         font-weight: 700;
         text-align: center;
+        &--highlight {
+            background: linear-gradient(148deg, rgba(58,107,112,1) 0%, rgba(80,114,58,1) 100%);
+            padding: 4px 10px;
+            border-radius: 10px;
+        }
     }
     &__subheadline {
         font-size: 28px;
         line-height: 30px;
-        color: var(--light-gray);
+        color: var( --color-light-6);
         text-align: center;
         margin-top: 10px;
     }
@@ -27,4 +32,8 @@ body {
     background-size: 150%;
     background-repeat: no-repeat;
     background-position: top center;
+}
+
+.sponsors {
+    padding: 6px 16px;
 }
