@@ -1,5 +1,12 @@
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--color-light-6);
+}
+
+
+h2 {
+    font-size: 38px;
+    color: var(--color-teal-4);
 }
 
 .hero {
@@ -24,14 +31,18 @@ body {
     }
 }
 
-
 .header {
     min-height: 80vh;
     width: 100%;
-    background-image: url("../../assets/header-bg.png");
-    background-size: 150%;
+    background-image: url("../../assets/header-image-desktop.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+}
+
+.content-wrapper {
+    width: min(980px, 100%);
+    margin: 0 auto;
 }
 
 .sponsors {

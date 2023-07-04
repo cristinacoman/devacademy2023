@@ -1,9 +1,30 @@
-.nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     background: var(--color-white);
     padding-inline: 15px;
-    height: 60px;
+    padding-block: 10px;
+    height: 70px;
+    border-bottom: 4px solid var(--color-orange);
+    &__hamburger {
+        display: none;
+    }
+    &__logo {
+        height: 50px;
+        width: auto;
+    }
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__nav {
+        margin-left: auto;
+    }
+    &__item {
+        display: inline-block;
+        margin-left: 20px;
+        cursor: pointer;
+    }
 }
 
 // Button reset, should be moved
