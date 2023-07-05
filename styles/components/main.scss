@@ -3,6 +3,9 @@ body {
     background-color: var(--color-light-6);
 }
 
+div {
+    box-sizing: border-box;
+}
 
 h2 {
     font-size: 38px;

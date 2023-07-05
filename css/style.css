@@ -22,11 +22,17 @@ body {
   --color-light-4: #DCEAE3;
   --color-light-5: #FBFBFB;
   --color-light-6: #F9F9F9;
+  --color-accent-1: #DE65FB;
+  --color-accent-2: #C7FB65;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: var(--color-light-6);
+}
+
+div {
+  box-sizing: border-box;
 }
 
 h2 {
@@ -145,10 +151,16 @@ button {
   color: var(--color-teal-1);
 }
 
+.news {
+  margin-top: 60px;
+}
 .news__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+.news__header-link {
+  text-decoration: none;
 }
 .news__header-text {
   size: 16px;
@@ -165,6 +177,8 @@ button {
 .news__card {
   background-color: var(--color-white);
   padding: 36px 26px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.04);
 }
 .news__card-header {
   min-height: 193px;
@@ -172,6 +186,77 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+.news__image-caption {
+  background: linear-gradient(90deg, rgb(14, 61, 69) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  height: 30px;
+  padding: 6px 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+.news__image-caption--orange {
+  color: var(--color-orange);
+}
+.news__image-caption--orange .news__image-caption-text:before {
+  background-color: var(--color-orange);
+}
+.news__image-caption--purple {
+  color: var(--color-accent-1);
+}
+.news__image-caption--purple .news__image-caption-text:before {
+  background-color: var(--color-accent-1);
+}
+.news__image-caption--lime {
+  color: var(--color-accent-2);
+}
+.news__image-caption--lime .news__image-caption-text:before {
+  background-color: var(--color-accent-2);
+}
+.news__image-caption-text {
+  padding-left: 26px;
+  position: relative;
+}
+.news__image-caption-text:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.news__card-share-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  transform: translateY(50%);
+  background: var(--color-green-5);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news__card-share-icon svg {
+  width: 12px;
+  height: auto;
+}
+.news__card-link {
+  font-size: 16px;
+  color: var(--color-green-5);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.news__card-link-icon {
+  margin-left: 22px;
 }
 .news__card-body {
   margin-top: 20px;
@@ -185,6 +270,72 @@ button {
 .news__card-description {
   font-size: 16px;
   margin-top: 20px;
+}
+
+.upcoming-events {
+  margin-top: 60px;
+}
+.upcoming-events__content {
+  background-image: url("../../assets/events-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 482px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.upcoming-events__content > .content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.upcoming-events__card {
+  width: min(574px, 100%);
+}
+.upcoming-events__event {
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.04);
+}
+.upcoming-events__event-name {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 700;
+  color: var(--color-teal-4);
+}
+.upcoming-events__event-description {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-teal-1);
+}
+.upcoming-events__event-date, .upcoming-events__event-location {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-teal-1);
+  display: flex;
+  align-items: center;
+}
+.upcoming-events__event-dateText, .upcoming-events__event-locationText {
+  margin-left: 14px;
+}
+.upcoming-events__button {
+  width: 100%;
+  height: 56px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, rgb(127, 172, 146) 0%, rgb(251, 178, 101) 100%);
+  border: 3px solid var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--color-white);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
