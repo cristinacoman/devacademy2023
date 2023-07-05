@@ -1,8 +1,12 @@
 .news {
+    margin-top: 60px;
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+    }
+    &__header-link {
+        text-decoration: none;
     }
     &__header-text {
         size: 16px;
@@ -19,6 +23,8 @@
     &__card {
         background-color: var(--color-white);
         padding: 36px 26px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 25px rgba(0,0,0,.04);
     }
     &__card-header {
         min-height: 193px;
@@ -26,6 +32,77 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        position: relative;
+    }
+    &__image-caption {
+        background: linear-gradient(90deg, rgba(14,61,69,1) 0%, rgba(255,255,255,0) 100%);
+        width: 100%;
+        height: 30px;
+        padding: 6px 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 12px;
+        line-height: 18px; //to center text
+        &--orange {
+            color: var(--color-orange);
+            .news__image-caption-text:before {
+                background-color: var(--color-orange);
+            }
+        }
+        &--purple {
+            color: var(--color-accent-1);
+            .news__image-caption-text:before {
+                background-color: var(--color-accent-1);
+            }
+        }
+        &--lime {
+            color: var(--color-accent-2);
+            .news__image-caption-text:before {
+                background-color: var(--color-accent-2);
+            }
+        }
+    }
+    &__image-caption-text {
+        padding-left: 26px;
+        position: relative;
+        &:before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__card-share-icon {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        transform: translateY(50%);
+        background: var(--color-green-5);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            width: 12px;
+            height: auto;
+        }
+    }
+    &__card-link {
+        font-size: 16px;
+        color: var(--color-green-5);
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    &__card-link-icon {
+        margin-left: 22px;
     }
     &__card-body {
         margin-top: 20px;

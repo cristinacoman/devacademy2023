@@ -1,0 +1,68 @@
+.upcoming-events {
+    margin-top: 60px;
+    &__content {
+        background-image: url("../../assets/events-background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 482px;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px; //remove this margin and add margin top to the next section
+        > .content-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    
+    &__card {
+        width: min(574px, 100%);
+    }
+    &__event {
+        background-color: var(--color-white);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 25px rgba($color: #000000, $alpha: .04);
+    }
+    &__event-name {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 700;
+        color: var(--color-teal-4);
+    }
+    &__event-description {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--color-teal-1);
+    }
+    &__event-date,
+    &__event-location {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--color-teal-1);
+        display: flex;
+        align-items: center;
+    }
+    &__event-dateText,
+    &__event-locationText {
+        margin-left: 14px;
+    }
+    &__button {
+        width: 100%;
+        height: 56px;
+        margin-top: 20px;
+        background: linear-gradient(90deg, rgba(127,172,146,1) 0%, rgba(251,178,101,1) 100%);
+        border: 3px solid var(--color-white);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 26px;
+        color: var(--color-white);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
