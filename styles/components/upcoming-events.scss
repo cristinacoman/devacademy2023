@@ -53,16 +53,6 @@
     }
     &__button {
         width: 100%;
-        height: 56px;
         margin-top: 20px;
-        background: linear-gradient(90deg, rgba(127,172,146,1) 0%, rgba(251,178,101,1) 100%);
-        border: 3px solid var(--color-white);
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 24px;
-        line-height: 26px;
-        color: var(--color-white);
-        border-radius: 10px;
-        cursor: pointer;
     }
 }
