@@ -1,0 +1,69 @@
+.petition {
+    height: 670px;
+    background: url("../../assets/petition-background.png");
+    background-repeat: no-repeat;
+    background-size: 662px;
+    background-position: center right;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__header,
+    &__card {
+        width: min(750px, 100%);
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    &__card {
+        background: linear-gradient(180deg, rgba(30,119,134,1) 0%, rgba(127,172,146,1) 100%);
+        padding: 24px 28px;
+        border-radius: 0 0 50px 0;
+        font-size: 16px;
+        color: var(--color-white);
+        line-height: 24px;
+        position: relative;
+        box-shadow: 0px 10px 25px rgba($color: #000000, $alpha: .04);
+        &:after {
+            content: "";
+            width: 67px;
+            height: 54px;
+            background: url("../../assets/card-decoration.png");
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    &__shareButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__shareButtonText {
+        margin-right: 10px;
+    }
+    &__cardTitle {
+        display: inline-block;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+    &__cardText {
+        margin-top: 14px;
+        &:first-of-type {
+            margin-top: 0;
+            font-size: 18px;
+        }
+    }
+    &__cardButton {
+        margin-top: 30px;
+        width: 400px;
+    }
+}

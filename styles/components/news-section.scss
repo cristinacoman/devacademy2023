@@ -1,0 +1,25 @@
+.news {
+    margin-top: 60px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__header-link {
+        text-decoration: none;
+    }
+    &__header-text {
+        size: 16px;
+        color: var(--color-green-5);
+    }
+    &__header-icon {
+        margin-left: 26px;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 20px;
+    }
+}
+

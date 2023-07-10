@@ -1,0 +1,65 @@
+.mediaSection {
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .newsWrapper {
+        margin-right: 47px;
+    }
+    .formWrapper {
+        background: linear-gradient(180deg, rgba(30,119,134,1) 0%, rgba(127,172,146,1) 100%);
+        min-width: 290px;
+        min-height: 572px;
+        padding: 42px 36px;
+        border-radius: 0 0 50px 0;
+        position: relative;
+        color: var(--color-white);
+        &:after {
+            content: "";
+            width: 67px;
+            height: 54px;
+            background: url("../../assets/card-decoration.png");
+            position: absolute;
+            left: 36px;
+            bottom: 42px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .formTitle {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        &__input {
+            width: 100%;
+            min-height: 50px;
+            margin-top: 10px;
+            border: 2px solid var(--color-white);
+            border-radius: 10px;
+            background: var(--color-teal-2);
+            color: var(--color-white);
+            box-sizing: border-box;
+            padding: 10px;
+            &::placeholder {
+                color: var(--color-white);
+            }
+        }
+        &__submit {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--color-orange);
+            color: var(--color-teal-1);
+            border: 3px solid var(--color-white);
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+}
